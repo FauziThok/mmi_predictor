@@ -13,9 +13,9 @@ st.markdown("Enter earthquake parameters to predict the shaking intensity (MMI).
 # MMI explanation box
 with st.expander("📘 About MMI Levels"):
     st.markdown("""
-    - **Low (I - III):** Barely felt, not likely to cause damage  
-    - **Medium (IV - VI):** Felt by many, may cause minor damage  
-    - **High (VII+):** Strong shaking, potential for significant damage
+    - **Low (I - III MMI):** Barely felt, not likely to cause damage  
+    - **Medium (IV - VI MMI):** Felt by many, may cause minor damage  
+    - **High (VII+ MMI):** Strong shaking, potential for significant damage
     """)
 
 # Form input
@@ -37,8 +37,8 @@ if submit:
 
     # Extra explanation based on prediction
     if prediction == "Low":
-        st.info("🟢 Low (I–III): Barely felt, not likely to cause damage.")
+        st.info("🟢 Low (I–III MMI): Barely felt, not likely to cause damage.")
     elif prediction == "Medium":
-        st.info("🟡 Medium (IV–VI): Felt by many, may cause minor damage.")
+        st.info("🟡 Medium (IV–VI MMI): Felt by many, may cause minor damage.")
     elif prediction == "High":
-        st.info("🔴 High (VII+): Strong shaking, potential for significant damage.")
+        st.info("🔴 High (VII+ MMI): Strong shaking, potential for significant damage.")
