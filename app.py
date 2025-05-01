@@ -32,9 +32,8 @@ if submit:
     input_data = np.array([[magnitude, depth, distance]])
     input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)[0]
-    prediction_str = str(prediction).lower().capitalize()
 
-    st.success(f"✅ Predicted MMI Category: **{prediction_str}**")
+    st.success(f"✅ Predicted MMI Category: **{prediction.capitalize()}**")
 
     # Extra explanation based on prediction
     if prediction == "Low":
