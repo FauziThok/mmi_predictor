@@ -23,7 +23,7 @@ with st.form(key="mmi_form"):
     st.subheader("Earthquake Parameters")
     magnitude = st.number_input("Magnitude", min_value=0.0, max_value=10.0, value=5.0, step=0.1)
     depth = st.number_input("Depth (km)", min_value=0.0, max_value=700.0, value=10.0, step=1.0)
-    distance = st.number_input("Distance to epicenter (km)", min_value=0.0, max_value=1000.0, value=50.0, step=1.0)
+    distance = st.number_input("Distance to epicenter (km)", min_value=0.0, max_value=700.0, value=50.0, step=1.0)
 
     submit = st.form_submit_button("Predict MMI")
 
