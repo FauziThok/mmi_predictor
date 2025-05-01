@@ -8,7 +8,7 @@ scaler = joblib.load('scaler_mmi.pkl')
 
 st.set_page_config(page_title="MMI Prediction App", layout="centered")
 st.title("🌍 Earthquake MMI Prediction")
-st.markdown("Masukkan parameter gempa untuk memprediksi intensitas guncangan (MMI).")
+st.markdown("Enter earthquake parameters to predict the shaking intensity (MMI).")
 
 # Form input user
 with st.form(key="mmi_form"):
