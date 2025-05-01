@@ -23,4 +23,4 @@ if submit:
     input_data = np.array([[magnitude, depth, distance]])
     input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)[0]
-    st.success(f"✅ Predicted MMI: **{prediction:.2f}**")
+    st.success(f"✅ Predicted MMI: **{prediction:}**")
