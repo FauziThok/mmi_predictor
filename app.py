@@ -33,7 +33,7 @@ if submit:
     input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)[0]
 
-    st.success(f"✅ Predicted MMI Category: **{prediction.capitalize()}**")
+    st.success(f"✅ Predicted MMI Category: **{prediction}**")
 
     # Extra explanation based on prediction
     if prediction == "low":
