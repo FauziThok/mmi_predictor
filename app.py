@@ -33,12 +33,12 @@ if submit:
     input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)[0]
 
-    st.success(f"✅ Predicted MMI Category: **{prediction}**")
+    st.success(f"✅ Predicted MMI Category: **{prediction.capitalize()}**")
 
     # Extra explanation based on prediction
-    if prediction == "low":
+    if prediction == "Low":
         st.info("🔵 Low (I–III): Barely felt, not likely to cause damage.")
-    elif prediction == "medium":
+    elif prediction == "Medium":
         st.info("🟡 Medium (IV–VI): Felt by many, may cause minor damage.")
-    elif prediction == "high":
+    elif prediction == "High":
         st.info("🔴 High (VII+): Strong shaking, potential for significant damage.")
