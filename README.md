@@ -12,8 +12,6 @@ This project aims to provide a fast, automated estimation of earthquake impact b
 * **Medium (4–6)**
 * **High (≥ 7)**
 
-The model is trained using labeled seismic data and achieves strong performance across all classes.
-
 ---
 
 ## Key Features
@@ -31,7 +29,7 @@ The model is trained using labeled seismic data and achieves strong performance 
   **93.4% Overall Accuracy**
 
 * **Deployment:**
-  Fully interactive **Streamlit App** for real-time predictions
+  Interactive **Streamlit App**
 
 ---
 
@@ -84,9 +82,8 @@ streamlit run app.py
 
 ## 🔗 Links
 
-* **GitHub Repository:** *[https://github.com/FauziThok/mmi_predictor.git]*
-* **Live Streamlit App:** *[https://mmipredictor-3s25fy3b7qmk27mjhpunee.streamlit.app/]*
+* **GitHub Repository:** *https://github.com/FauziThok/mmi_predictor.git*
+* **Live Streamlit App:** *https://mmipredictor-3s25fy3b7qmk27mjhpunee.streamlit.app/*
 
 ---
 
-Feel free to improve, extend, or integrate the model into larger seismic analysis systems!
