@@ -46,8 +46,8 @@ This project aims to provide a fast, automated estimation of earthquake impact b
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your/repository.git
-cd repository
+git clone https://github.com/FauziThok/mmi_predictor.git
+cd mmi_predictor
 ```
 
 ### 2. Install dependencies
